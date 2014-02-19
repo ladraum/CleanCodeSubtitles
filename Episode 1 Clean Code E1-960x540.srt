@@ -1,0 +1,1452 @@
+﻿1
+00:00:00,000 --> 00:00:02,830
+Episódio 1 - Clean Code
+
+2
+00:00:03,960 --> 00:00:08,080
+Oi, eu sou o Tio Bob e isto é Clean Code
+
+3
+00:00:41,670 --> 00:00:43,940
+M104 - Galáxia Sombreiro
+
+4
+00:00:45,880 --> 00:00:48,000
+Está na hora de uma lição de astronomia
+
+5
+00:00:49,533 --> 00:00:53,000
+Vamos seguir o velho mapa das galáxias
+
+6
+00:00:53,000 --> 00:00:56,000
+Vamos começar aqui em cima, na Ursa Maior
+
+7
+00:00:56,000 --> 00:00:59,800
+Vamos seguir a curva do cabo até Arcutus
+
+8
+00:00:59,800 --> 00:01:02,800
+depois vamos descer correr até Spica
+
+9
+00:01:04,040 --> 00:01:06,460
+pulamos para oeste mais ou menos seis graus
+
+10
+00:01:06,460 --> 00:01:09,890
+ou mais ou menos meio punho na distância de um braço
+
+11
+00:01:09,890 --> 00:01:14,060
+para M104, a galáxia Sombreiro
+
+12
+00:01:15,220 --> 00:01:19,710
+é pertinho, só 28 milhões de anos luz daqui
+
+13
+00:01:19,996 --> 00:01:22,600
+o que significa que, numa noite bem escura
+
+14
+00:01:22,600 --> 00:01:27,170
+vou provavelmente poderia vê-la a olho nú
+
+15
+00:01:27,170 --> 00:01:31,770
+com binóculos, você com certeza veria um círculo borrado no céu
+
+16
+00:01:31,770 --> 00:01:35,310
+e com um bom telescópio? bom, olha isso
+
+17
+00:01:35,310 --> 00:01:38,310
+é uma gloriosa galáxia circular
+
+18
+00:01:38,310 --> 00:01:41,730
+tem essa brilhante área central
+
+19
+00:01:41,730 --> 00:01:49,000
+e olha só essa saliente camada de poeira que corta ela, que visão!
+
+20
+00:01:49,000 --> 00:01:55,330
+aquela faísca alí no meio? Aquilo é algo bem especial e raro
+
+21
+00:01:55,330 --> 00:01:58,220
+nós só conhecemos alguns deles
+
+22
+00:01:58,220 --> 00:02:04,420
+aquilo é um buraco negro e tem uma massa um bilhão de vezes maior que o nosso Sol
+
+23
+00:02:05,740 --> 00:02:07,740
+e está ativo
+
+24
+00:02:07,740 --> 00:02:09,500
+o fato de podermos vê-lo brlilhando
+
+25
+00:02:09,500 --> 00:02:12,500
+significa que está sugando poeira e gás
+
+26
+00:02:12,500 --> 00:02:17,420
+sua gravidade pode estar despedaçando estrelas inteiras e as engolindo
+
+27
+00:02:18,855 --> 00:02:21,700
+Agora vamos olhar por infra-vermelho
+
+28
+00:02:21,700 --> 00:02:25,370
+esta é a vista pelo telescópio espacial Spitzer
+
+29
+00:02:27,120 --> 00:02:31,900
+o material brilhante está quente, está emitindo radiação infra-vermelha
+
+30
+00:02:31,900 --> 00:02:39,000
+a camada de poeira parece um anél, e esse anél tem 30 mil anos luz de diâmetro
+
+31
+00:02:39,000 --> 00:02:43,550
+você pode ver que o buraco negro central também está emitindo bastante radiação infra-vermelha
+
+32
+00:02:43,550 --> 00:02:47,300
+mas olha essa área no meio, está vazia
+
+33
+00:02:47,300 --> 00:02:48,910
+como ficou tão vazia?
+
+34
+00:02:50,000 --> 00:02:51,850
+quando combinamos as duas imagens
+
+35
+00:02:51,850 --> 00:02:55,710
+temos algo que parece uma explosão de um filme de ficção
+
+36
+00:02:55,710 --> 00:02:57,880
+como se um planeta tivesse explodido
+
+37
+00:02:57,880 --> 00:03:01,730
+o que é isto que afastou todo esse material da região central?
+
+38
+00:03:01,730 --> 00:03:03,430
+porque está tão vazio?
+
+39
+00:03:03,430 --> 00:03:09,000
+o buraco negro explodiu e virou um quazar um bilhão de anos atrás?
+
+40
+00:03:09,000 --> 00:03:11,350
+empurrando todo o resto para formar o anel?
+
+41
+00:03:12,976 --> 00:03:16,120
+é uma bela visão, não é mesmo?
+
+42
+00:03:20,083 --> 00:03:22,400
+Clean Code faz diferença?
+
+43
+00:03:24,187 --> 00:03:27,180
+Clean Code ... faz diferença?
+
+44
+00:03:29,960 --> 00:03:34,060
+Padrões de implementação: é um livro escrito por Kent Beck
+
+45
+00:03:34,060 --> 00:03:37,900
+esse é um livro excelente se você quiser aprender bons hábitos de codificação
+
+46
+00:03:37,900 --> 00:03:42,750
+mas neste livro, Kent diz que ele se baseia uma frágil premissa
+
+47
+00:03:42,750 --> 00:03:45,180
+que bom código faz diferença
+
+48
+00:03:45,675 --> 00:03:49,220
+frágil? Acho que não
+
+49
+00:03:49,246 --> 00:03:51,490
+deixa eu te contar uma história sobre
+
+50
+00:03:51,490 --> 00:03:55,800
+a empresa assassinada pelo código
+
+51
+00:03:57,354 --> 00:04:00,170
+A muito tempo atrás, em uma empresa muito, muito distante
+
+52
+00:04:00,170 --> 00:04:03,750
+eu usei um debugger que usava código fonte C
+
+53
+00:04:03,750 --> 00:04:07,370
+ele foi feito por uma empresa chamada Sword Inc.
+
+54
+00:04:07,370 --> 00:04:11,480
+era poderoso, e nos poupou muito tempo e esforço
+
+55
+00:04:12,469 --> 00:04:19,000
+Mas era 1990, e estávamos prestes a trocar C por C++
+
+56
+00:04:19,609 --> 00:04:25,200
+Sword prometeu que eles teriam uma versão do debugger em C++ em breve
+
+57
+00:04:26,183 --> 00:04:28,770
+mas o tempo passou
+
+58
+00:04:28,770 --> 00:04:30,400
+seis meses depois
+
+59
+00:04:30,400 --> 00:04:36,050
+eles nos enviaram uma versão do debugger que levou 45 minutos para carregar e depois dar pau
+
+60
+00:04:37,994 --> 00:04:40,840
+jogamos de volta para eles com um aviso severo
+
+61
+00:04:40,840 --> 00:04:45,000
+eles nos prometeram que teríamos uma nova e melhor release logo
+
+62
+00:04:45,000 --> 00:04:48,440
+nós estávamos céticos, mas esperamos
+
+63
+00:04:48,440 --> 00:04:49,930
+seis meses depois
+
+64
+00:04:49,930 --> 00:04:51,750
+eles nos mandaram uma nova release
+
+65
+00:04:51,750 --> 00:04:57,140
+e o que você acha? demorou 45 minutos para carregar e daí deu pau
+
+66
+00:04:59,182 --> 00:05:01,930
+depois disso, simplesmente paramos de contar com eles
+
+67
+00:05:01,930 --> 00:05:04,000
+no nosso ponto de vista, aquele produto estava morto
+
+68
+00:05:06,089 --> 00:05:09,730
+não foi nenhuma surpresa para nós quando, depois de seis meses
+
+69
+00:05:09,730 --> 00:05:11,840
+Sword Inc. FALIU
+
+70
+00:05:13,030 --> 00:05:14,690
+10 anos depois
+
+71
+00:05:16,867 --> 00:05:22,280
+uma década depois eu conheci uma pessoa que trabalhou na Sword naquele período
+
+72
+00:05:22,280 --> 00:05:24,280
+e ele me contou a história
+
+73
+00:05:25,175 --> 00:05:26,500
+ele disse:
+
+74
+00:05:27,444 --> 00:05:30,280
+nós corremos para entregar o debugger para o mercado
+
+75
+00:05:30,280 --> 00:05:33,820
+nós fizemos uma bagunça gigante no código
+
+76
+00:05:33,820 --> 00:05:35,320
+mais tarde
+
+77
+00:05:35,320 --> 00:05:38,800
+quando tivemos que fazer funcionar em C++, bem...
+
+78
+00:05:38,800 --> 00:05:41,500
+era simplesmente impossível trabalhar naquela bagunça
+
+79
+00:05:43,026 --> 00:05:47,780
+então... Código limpo com certeza fez a difereça para eles
+
+80
+00:05:48,498 --> 00:05:54,120
+no fim, foi o código sujo que matou aquela empresa
+
+81
+00:05:54,538 --> 00:05:56,538
+Mas o que aconteceu?
+
+82
+00:05:56,538 --> 00:06:01,250
+o que foi que naquele código bagunçado, que matou eles?
+
+83
+00:06:05,549 --> 00:06:07,860
+A armadilha da produtividade
+
+84
+00:06:09,252 --> 00:06:12,220
+Você já trabalhou em um projeto a partir do zero?
+
+85
+00:06:12,220 --> 00:06:14,880
+você se lembra quão produtivo você era?
+
+86
+00:06:14,880 --> 00:06:19,710
+raios saíam dos seus dedos enquanto você fazia feature depois de feature funcionar
+
+87
+00:06:19,710 --> 00:06:21,310
+você estava voando
+
+88
+00:06:21,310 --> 00:06:27,850
+usuários vinha até você e pediam algo novo e você podia entregar em horas ou dias
+
+89
+00:06:28,839 --> 00:06:30,750
+mas a velocidade não durou
+
+90
+00:06:30,750 --> 00:06:34,100
+um ano ou dois depois, as coisas pareciam rastejar
+
+91
+00:06:34,100 --> 00:06:38,550
+quanto mais você trabalhava, mais e mais lento você parecia ficar
+
+92
+00:06:38,550 --> 00:06:39,600
+e porquê?
+
+93
+00:06:39,600 --> 00:06:42,550
+por causa da bagunça que cresceu no código
+
+94
+00:06:42,550 --> 00:06:46,880
+e nagevar por aquela bagunça realmente começou a pesar na sua velocidade
+
+95
+00:06:46,880 --> 00:06:48,700
+e pesar de verdade
+
+96
+00:06:48,700 --> 00:06:51,850
+aquela alta produtividade que você aproveitou no início
+
+97
+00:06:51,850 --> 00:06:53,490
+agora despencou
+
+98
+00:06:53,490 --> 00:06:56,920
+coisas que levavam horas agora levam dias
+
+99
+00:06:56,920 --> 00:07:03,220
+coisas que levavam dias agora levam semanas, meses, ou nem podem ser feitas
+
+100
+00:07:04,641 --> 00:07:06,850
+os gerentes ficaram preocupados
+
+101
+00:07:06,850 --> 00:07:11,680
+afinal, eles basearam seus planos pela sua alta produtividade no início
+
+102
+00:07:11,680 --> 00:07:16,160
+agora eles enfrentam um buraco assustador nos seus planos de negócios
+
+103
+00:07:17,154 --> 00:07:21,080
+a primeira estratégia dos gerentes para preencher aquele buraco
+
+104
+00:07:21,080 --> 00:07:24,280
+é colocar mais pressão nos desenvolvedores de software
+
+105
+00:07:24,280 --> 00:07:29,420
+isso serve apenas para forçar os desenvolvedores a fazerem bagunças cada vez maiores
+
+106
+00:07:29,420 --> 00:07:33,080
+e apesar de esforços heróicos, as coisas ficam ainda mais devagares
+
+107
+00:07:34,204 --> 00:07:38,000
+depois gerentes tentam colocar mais pessoas no time
+
+108
+00:07:38,000 --> 00:07:40,700
+isso só faz a produtividade despencar
+
+109
+00:07:40,700 --> 00:07:44,040
+enquanto as novas pessoas sugam a vida dos mais velhos
+
+110
+00:07:44,040 --> 00:07:46,800
+então eventualmente os novatos começam a trabalhar mais rápido
+
+111
+00:07:46,800 --> 00:07:48,800
+fazendo suas próprias bagunças
+
+112
+00:07:48,800 --> 00:07:51,370
+fazendo todos ficarem ainda mais devagares
+
+113
+00:07:51,655 --> 00:07:54,090
+adicionar força de trabalho não é barato
+
+114
+00:07:54,090 --> 00:08:00,350
+então os gerentes enfrentam mais e mais custos, com menos e menos produtividade
+
+115
+00:08:00,350 --> 00:08:02,950
+em desespero eles se voltam para os programadores
+
+116
+00:08:02,950 --> 00:08:04,440
+e perguntam para eles
+
+117
+00:08:04,440 --> 00:08:06,180
+o que eles acham que deve ser feito?
+
+118
+00:08:06,600 --> 00:08:09,130
+claro que os desenvolvedores sabiam exatamente o que fazer
+
+119
+00:08:09,130 --> 00:08:12,430
+eles estavam batendo os tambores do redesign fazem meses
+
+120
+00:08:12,430 --> 00:08:13,900
+um deles disse
+
+121
+00:08:13,900 --> 00:08:15,800
+a melhor coisa que poderia acontecer com esse sistema
+
+122
+00:08:15,800 --> 00:08:18,800
+é alguém entrar na sala do servidor com um imã gigante
+
+123
+00:08:18,800 --> 00:08:23,130
+o que este sistema precisa é de um grande redesign
+
+124
+00:08:24,554 --> 00:08:27,400
+gerentes morriam de medo desta opção
+
+125
+00:08:27,400 --> 00:08:30,360
+eles sabiam exatamente o quanto isso iria custar
+
+126
+00:08:30,360 --> 00:08:34,820
+e eles não tinha confiança alguma que iria deixá-los em uma situação melhor
+
+127
+00:08:34,820 --> 00:08:37,050
+mas o que mais eles podiam fazer?
+
+128
+00:08:37,934 --> 00:08:39,170
+relutantemente
+
+129
+00:08:39,170 --> 00:08:42,170
+eles não conseguiam vender qualquer outro plano que podiam ter
+
+130
+00:08:42,606 --> 00:08:46,960
+então eles autorizam o redesign para o projeto inteiro
+
+131
+00:08:47,544 --> 00:08:48,730
+para os desenvolvedores
+
+132
+00:08:48,730 --> 00:08:51,440
+era como se um novo dia tivesse nascido
+
+133
+00:08:51,440 --> 00:08:54,340
+iríamos começar um projeto do zero de novo
+
+134
+00:08:54,340 --> 00:08:57,410
+poderíamos fugir da bagunça e sermos produtivos
+
+135
+00:08:57,410 --> 00:08:59,450
+woooo dia feliz :-)
+
+136
+00:08:59,450 --> 00:09:02,570
+então pegamos os 10 melhores e mais brilhantes
+
+137
+00:09:02,570 --> 00:09:04,350
+os que fazem e aconteçem
+
+138
+00:09:04,350 --> 00:09:10,750
+o que iriam nos afastar da bagunça para a terra prometida de um novo projeto do zero
+
+139
+00:09:11,201 --> 00:09:13,100
+o resto de nós odiava aquele pessoal
+
+140
+00:09:13,100 --> 00:09:17,750
+porque os clientes não iam esperar o time tigre terminar o que eles estivessam fazendo
+
+141
+00:09:17,750 --> 00:09:20,700
+os clientes precisavam de correções de bugs e novas features
+
+142
+00:09:20,700 --> 00:09:23,600
+enquanto nós éramos deixados para nos arrastar no meio da bagunça
+
+143
+00:09:23,600 --> 00:09:27,800
+enquanto o time tigre estava fazendo coisas de projetos do zero
+
+144
+00:09:28,819 --> 00:09:29,840
+enquanto isso
+
+145
+00:09:29,840 --> 00:09:32,040
+o time tigre precisava de requisitos
+
+146
+00:09:32,040 --> 00:09:34,370
+e onde você acha que estavam esses requisitos?
+
+147
+00:09:34,370 --> 00:09:36,490
+você acha que tinha documentação de requisitos?
+
+148
+00:09:36,490 --> 00:09:39,190
+e mesmo que tivesse, você acha que estava atualizado?
+
+149
+00:09:39,190 --> 00:09:41,920
+não, tinham muitas modificações de última hora
+
+150
+00:09:41,920 --> 00:09:47,190
+e modificações à meia noite para os documentos de requisitos realmente significar alguma coisa
+
+151
+00:09:47,190 --> 00:09:50,040
+os verdadeiros requisitos para o novo sistema
+
+152
+00:09:50,040 --> 00:09:51,510
+estavam no sistema velho
+
+153
+00:09:51,510 --> 00:09:53,710
+no código do sistema velho
+
+154
+00:09:53,710 --> 00:09:56,000
+então agora o time tigre
+
+155
+00:09:56,000 --> 00:09:59,680
+era forçado a se enfiar no código do sistema velho
+
+156
+00:09:59,680 --> 00:10:03,840
+tentando descobrir quais eram os requisitos para o novo sitema
+
+157
+00:10:03,840 --> 00:10:05,800
+e então começava a corrida
+
+158
+00:10:05,800 --> 00:10:09,350
+como aquiles e a tartaruga no paradoxo de Zeno
+
+159
+00:10:09,350 --> 00:10:14,150
+toda vez que o time tigre chegava onde o sistema antigo estava
+
+160
+00:10:14,150 --> 00:10:19,080
+o sistema antigo já estava adiante, com novas correções de bugs e novas modificações
+
+161
+00:10:19,803 --> 00:10:24,090
+eu vi essa corrida se arrastar por 10 anos
+
+162
+00:10:26,343 --> 00:10:31,500
+durantes esses anos, um por ump, os membros do time foram gradualmente sendo trocados
+
+163
+00:10:31,500 --> 00:10:33,500
+o sistema foi ficando cada vez mais bagunçado
+
+164
+00:10:33,500 --> 00:10:35,750
+cada vez mais desorganizado e com gambiarras
+
+165
+00:10:35,750 --> 00:10:38,680
+eventualmente, mesmo nunca tendo sido deployiado
+
+166
+00:10:38,680 --> 00:10:42,540
+os desenvolvedores do time começaram a pedir um redesign
+
+167
+00:10:43,193 --> 00:10:46,820
+e é assim que um código bagunçado pode retardar um projeto
+
+168
+00:10:46,820 --> 00:10:49,100
+um departamento, um setor
+
+169
+00:10:49,100 --> 00:10:50,840
+ou até mesmo uma empresa.
+
+170
+00:10:50,840 --> 00:10:51,730
+mas como?
+
+171
+00:10:51,730 --> 00:10:54,930
+como código bagunçado pode diminuir tanto a produtividade?
+
+172
+00:10:54,930 --> 00:10:56,720
+quais são os mecanismos?
+
+173
+00:11:00,944 --> 00:11:03,230
+código apodrece
+
+174
+00:11:04,548 --> 00:11:05,950
+o que acontece com o código?
+
+175
+00:11:05,950 --> 00:11:08,060
+porque ele piora depois de um tempo?
+
+176
+00:11:08,060 --> 00:11:11,420
+ele começa limpo, bonito
+
+177
+00:11:11,420 --> 00:11:16,800
+mas então, com o tempo, começa a podrecer e feder como um pedaço de carne estragada
+
+178
+00:11:16,800 --> 00:11:21,550
+você sabe quão velho é o código pelas expressões dos programadores
+
+179
+00:11:21,550 --> 00:11:23,650
+enquanto abrem o código nas suas telas
+
+180
+00:11:24,668 --> 00:11:26,760
+antes de olharmos porque isso acontece
+
+181
+00:11:26,760 --> 00:11:28,760
+vamos olhar os sintomas
+
+182
+00:11:28,760 --> 00:11:31,260
+o que no código bagunçado nos faz irmos mais devagar?
+
+183
+00:11:31,260 --> 00:11:33,300
+como isso afeta nossa produtividade?
+
+184
+00:11:33,300 --> 00:11:35,760
+como isso afeta nossas estimativas?
+
+185
+00:11:36,747 --> 00:11:38,747
+Rigidez
+
+186
+00:11:41,151 --> 00:11:42,420
+um sistema rígido
+
+187
+00:11:42,420 --> 00:11:45,660
+é um sistema onde uma simples mudança ou melhoria
+
+188
+00:11:45,660 --> 00:11:49,660
+te força a fazer várias modificações pelo sistema corpo do sistema
+
+189
+00:11:49,660 --> 00:11:52,910
+isso acontece porque o sistema ficou tão emaranhado
+
+190
+00:11:52,910 --> 00:11:55,120
+que toda vez que você toca em um lugar
+
+191
+00:11:55,120 --> 00:11:57,860
+você é forçado a fazer ajustes em vários outros lugares
+
+192
+00:11:57,860 --> 00:12:01,860
+que por sua vez precisam de mais modificações em outros lugares
+
+193
+00:12:01,860 --> 00:12:04,350
+os programadores ficam que nem cachorros
+
+194
+00:12:04,350 --> 00:12:07,460
+correndo atrás do próprio rabo pelo código
+
+195
+00:12:07,460 --> 00:12:09,840
+fazendo mudanças aqui, ali e acolá
+
+196
+00:12:09,840 --> 00:12:12,560
+possivelmente alterando centenas de módulos diferentes
+
+197
+00:12:12,560 --> 00:12:15,600
+só para fazer o sistema voltar a funcionar
+
+198
+00:12:17,387 --> 00:12:20,110
+sistemas rídigidos são muito imprevisíveis
+
+199
+00:12:20,110 --> 00:12:25,610
+fazer estimativas é difícil porque você nunca sabe quantos módulos serão alterados
+
+200
+00:12:26,663 --> 00:12:28,620
+Fragilidade
+
+201
+00:12:30,200 --> 00:12:33,236
+sistemas frágeis são sistemas que quebram em vários lugares
+
+202
+00:12:33,230 --> 00:12:35,480
+quando você mexe em apenas um lugar
+
+203
+00:12:35,480 --> 00:12:37,640
+uma simples mudança em sistemas desse tipo
+
+204
+00:12:37,640 --> 00:12:40,960
+pode causar mal funcionamento por todo o sistema
+
+205
+00:12:40,960 --> 00:12:43,860
+é muito difícil estimar para sistemas assim
+
+206
+00:12:43,860 --> 00:12:46,070
+porque eles são tão imprevisíveis
+
+207
+00:12:47,117 --> 00:12:49,810
+quando um sistema é frágil
+
+208
+00:12:49,810 --> 00:12:52,380
+usuários e gerentes percebem
+
+209
+00:12:52,380 --> 00:12:56,770
+eles vêem comportamentos estranhos em lugares que costumavam funcionar
+
+210
+00:12:56,770 --> 00:12:58,370
+e esses comportamentos
+
+211
+00:12:58,370 --> 00:13:00,200
+fazem eles ficarem bem nervosos
+
+212
+00:13:00,200 --> 00:13:03,060
+quando desenvolvedores mudam alguma coisa aqui
+
+213
+00:13:03,060 --> 00:13:06,160
+mas alguma coisa aqui quebra
+
+214
+00:13:06,160 --> 00:13:08,720
+não se pode confiar em mais nada
+
+215
+00:13:08,720 --> 00:13:10,990
+os desenvolvedores parecem incompetentes
+
+216
+00:13:10,990 --> 00:13:14,520
+e o sistema parece que não é confiável
+
+217
+00:13:15,779 --> 00:13:17,340
+inseparabilidade
+
+218
+00:13:20,250 --> 00:13:23,530
+um sistema inseparável é um sistema composto de módulos
+
+219
+00:13:23,530 --> 00:13:27,060
+que não podem ser separados e reusados para outros propósitos
+
+220
+00:13:27,060 --> 00:13:32,120
+normalmente tentamos fazer sistemas compostos por módulos que podem ser reusados
+
+221
+00:13:32,120 --> 00:13:35,020
+infelizamente, muitas vezes esse esforço falha
+
+222
+00:13:35,020 --> 00:13:38,660
+designers de sistemas falham em forçar limites para os módulos
+
+223
+00:13:38,660 --> 00:13:41,800
+desenvolvedores de software, na pressa, tomam atalhos
+
+224
+00:13:41,800 --> 00:13:44,750
+esses atalhos normalmente ultrapassam as fronteiras dos módulos
+
+225
+00:13:44,750 --> 00:13:47,530
+fazendo com que esses módulos sejam inseparáveis e não reutilizáveis
+
+226
+00:13:48,445 --> 00:13:51,110
+sistemas inseparáveis são imprevisíveis
+
+227
+00:13:51,110 --> 00:13:55,200
+você nunca sabe se pode reusar algum componente do sistema
+
+228
+00:13:55,200 --> 00:13:57,970
+então é impossível fazer estimativas confiáveis
+
+229
+00:13:58,922 --> 00:14:01,050
+opacidade
+
+230
+00:14:02,559 --> 00:14:07,290
+as pessoas atrás dessas duas portas estão revisando códigos
+
+231
+00:14:07,297 --> 00:14:09,390
+tome um momento para estudar essa figura
+
+232
+00:14:09,390 --> 00:14:14,350
+ela explica opacidade melhor que eu poderia explicar com palavras
+
+233
+00:14:24,314 --> 00:14:28,210
+código opaco é um código que não comunica a intenção do autor
+
+234
+00:14:28,210 --> 00:14:29,370
+é difícil de ler
+
+235
+00:14:29,370 --> 00:14:30,660
+dificil de entender
+
+236
+00:14:30,660 --> 00:14:32,470
+e difícil de mudar
+
+237
+00:14:33,490 --> 00:14:35,470
+indo rápido
+
+238
+00:14:37,561 --> 00:14:41,660
+você já teve de mãos atadas por causa de código ruim?
+
+239
+00:14:41,660 --> 00:14:44,500
+você é um desenvolvedor de software, é claro que você já esteve
+
+240
+00:14:44,500 --> 00:14:47,170
+a pergunta é - porque você o escreveu?
+
+241
+00:14:47,170 --> 00:14:49,700
+foi por causa de gerentes idiotas?
+
+242
+00:14:49,700 --> 00:14:52,150
+ou clientes impacientes?
+
+243
+00:14:52,150 --> 00:14:54,530
+foi por causa de cronogramas impossíveis?
+
+244
+00:14:54,530 --> 00:14:58,200
+ou talvez os requisitos viviam mudando?
+
+245
+00:14:58,200 --> 00:15:00,480
+a verdade é que essas são apenas desculpas
+
+246
+00:15:00,480 --> 00:15:02,930
+essas coisas não fazem código ruim
+
+247
+00:15:02,930 --> 00:15:05,950
+o que faz código ruim são programadores
+
+248
+00:15:05,950 --> 00:15:10,280
+programadores, nós, nós fazemos a bagunça, é nossa culpa
+
+249
+00:15:10,280 --> 00:15:12,120
+nós não podemos culpar ninguém
+
+250
+00:15:12,120 --> 00:15:14,750
+nós escrevemos o código ruim
+
+251
+00:15:15,799 --> 00:15:18,050
+a razão para começarmos fazendo bagunça
+
+252
+00:15:18,050 --> 00:15:21,220
+é porque sentimos a urgência do cliente
+
+253
+00:15:21,220 --> 00:15:23,220
+a pressão do prazo de entrega
+
+254
+00:15:23,220 --> 00:15:25,220
+e então a gente corre
+
+255
+00:15:25,220 --> 00:15:27,820
+nós dizemos à nós mesmo que vamos voltar depois e corrigir
+
+256
+00:15:27,820 --> 00:15:30,300
+mas nós sabemos que não vamos
+
+257
+00:15:30,300 --> 00:15:32,250
+a ironia disso
+
+258
+00:15:32,250 --> 00:15:34,250
+é que é a bagunça que nos deixa lentos
+
+259
+00:15:34,250 --> 00:15:36,930
+nós não podemos ir rápido se estamos fazendo bagunça
+
+260
+00:15:36,930 --> 00:15:38,600
+e você já sabe disso
+
+261
+00:15:38,600 --> 00:15:43,080
+você já admitiu que foi significativamente impedido por código ruim
+
+262
+00:15:43,894 --> 00:15:46,950
+se você quiser ir rápido, você tem que ficar limpo
+
+263
+00:15:46,950 --> 00:15:50,180
+a única maneira de ir rápido, é ir bem
+
+264
+00:15:53,970 --> 00:15:56,200
+isso é difícil de aceitar
+
+265
+00:15:56,200 --> 00:15:58,820
+todo mundo acha que pode ir rápido somente correndo
+
+266
+00:15:58,820 --> 00:16:00,700
+mas isso é uma ilusão
+
+267
+00:16:00,700 --> 00:16:03,900
+você não pode correr pelo código e ir rápido
+
+268
+00:16:03,900 --> 00:16:06,350
+algumas pessoas pensam: bem...
+
+269
+00:16:06,350 --> 00:16:08,070
+é rápido a curto prazo 
+
+270
+00:16:08,070 --> 00:16:09,900
+mas tem um custo a longo prazo
+
+271
+00:16:09,900 --> 00:16:11,660
+mas mesmo isso é uma ilusão
+
+272
+00:16:11,660 --> 00:16:15,910
+se você correr isso vai te prejudicar a curto e a longo prazo
+
+273
+00:16:15,910 --> 00:16:18,750
+Código limpo não tem custo a curto prazo
+
+274
+00:16:18,750 --> 00:16:20,720
+e você não pode ir mais rápido
+
+275
+00:16:20,720 --> 00:16:22,290
+somente correndo com o código
+
+276
+00:16:27,270 --> 00:16:31,370
+você já assistiu um chef preparando sushi?
+
+277
+00:16:31,370 --> 00:16:33,370
+é algo mágico de assistir
+
+278
+00:16:33,370 --> 00:16:35,020
+na próxima vez que você for
+
+279
+00:16:35,020 --> 00:16:36,480
+preste bem atenção
+
+280
+00:16:36,480 --> 00:16:38,460
+você vai ver esse cara
+
+281
+00:16:38,460 --> 00:16:39,750
+se mexendo rápido
+
+282
+00:16:39,750 --> 00:16:41,250
+suas mãos são uns borrões
+
+283
+00:16:41,250 --> 00:16:43,520
+ele sabe exatamente onde estão as suas facas
+
+284
+00:16:43,520 --> 00:16:45,660
+ele sabe exatamente onde a comida está
+
+285
+00:16:45,660 --> 00:16:47,500
+todo movimento é bem praticado
+
+286
+00:16:47,500 --> 00:16:49,800
+ele se mexe na velocidade da luz
+
+287
+00:16:49,800 --> 00:16:51,370
+é mágico
+
+288
+00:16:51,370 --> 00:16:53,070
+e então tem aquele momento
+
+289
+00:16:53,070 --> 00:16:55,880
+onde ele pega essa comida preparada impecavelmente
+
+290
+00:16:55,880 --> 00:16:57,700
+e ele coloca na sua frente
+
+291
+00:16:57,700 --> 00:17:01,800
+e se você olha na área de trabalho dele você vai ver que está perfeita
+
+292
+00:17:01,800 --> 00:17:04,440
+ele tem limpado todo o tempo que estava preparando
+
+293
+00:17:04,440 --> 00:17:06,640
+porque essa é a única maneira
+
+294
+00:17:06,640 --> 00:17:08,430
+que ele pode ir rápido
+
+295
+00:17:09,946 --> 00:17:11,140
+então
+
+296
+00:17:11,140 --> 00:17:14,110
+agora sabemos como código ruim pode nos atrasar
+
+297
+00:17:14,110 --> 00:17:15,110
+e também sabemos
+
+298
+00:17:15,110 --> 00:17:18,760
+que a única maneira de ir rápido é ir bem
+
+299
+00:17:18,760 --> 00:17:22,350
+então, o que é Clean Code?
+
+300
+00:17:26,363 --> 00:17:28,680
+o que é Clean Code?
+
+301
+00:17:30,567 --> 00:17:32,370
+o que é Clean Code?
+
+302
+00:17:32,370 --> 00:17:35,150
+eu fiz essa pergunta para vários especialistas
+
+303
+00:17:35,150 --> 00:17:37,750
+então vamos ouvir o que eles tem a falar
+
+304
+00:17:38,709 --> 00:17:43,110
+Bjarne Stroustrup, inventor do C++ disse
+
+305
+00:17:43,110 --> 00:17:46,730
+eu gosto que meu código seja elegante e eficiente
+
+306
+00:17:46,730 --> 00:17:49,730
+código limpo faz uma coisa
+
+307
+00:17:51,088 --> 00:17:55,250
+código elegante é um código que faz muito com apenas algumas palavras
+
+308
+00:17:55,250 --> 00:18:00,260
+código eficiente é código que roda rápido, disperdiçando apenas alguns ciclos
+
+309
+00:18:00,260 --> 00:18:04,120
+mas o que significa para um código fazer apenas uma coisa?
+
+310
+00:18:04,120 --> 00:18:08,250
+isso é algo que vamos falar bastante em outro episódio
+
+311
+00:18:09,539 --> 00:18:13,970
+Grady Booch, autor do clássico dos anos 90
+
+312
+00:18:13,970 --> 00:18:18,420
+Análise orientada e design com aplicações disse
+
+313
+00:18:18,420 --> 00:18:21,180
+código limpo deve ser simples e direto
+
+314
+00:18:21,180 --> 00:18:25,240
+código limpo deve ser lido como prosa bem escrita
+
+315
+00:18:25,240 --> 00:18:28,600
+todos podemos concordar com a parte do simples e direto
+
+316
+00:18:28,600 --> 00:18:33,910
+mas, código pode ser realmente lido como prosa bem escrita?
+
+317
+00:18:33,910 --> 00:18:36,910
+a resposta curta é sim
+
+318
+00:18:36,910 --> 00:18:41,350
+a resposta mais longa é: bem, quase
+
+319
+00:18:41,350 --> 00:18:45,400
+mas nós vamos falar disso em um outro episódio logo logo
+
+320
+00:18:46,610 --> 00:18:48,360
+Michael Feathers
+
+321
+00:18:48,360 --> 00:18:52,600
+autor do livro trabalhando efetivamente com código legado
+
+322
+00:18:52,600 --> 00:18:54,200
+disse
+
+323
+00:18:54,200 --> 00:18:57,070
+código limpo sempre parece que foi escrito
+
+324
+00:18:57,070 --> 00:18:59,070
+por alguém que se importa
+
+325
+00:18:59,890 --> 00:19:01,400
+esse é um pensamento encantador
+
+326
+00:19:01,400 --> 00:19:05,680
+nós já vimos código que parece que ninguém se importa
+
+327
+00:19:05,680 --> 00:19:06,900
+este curso
+
+328
+00:19:06,900 --> 00:19:10,410
+é todo sobre aprender a se importar com o código
+
+329
+00:19:11,668 --> 00:19:15,000
+Ward Cunningham, o inventor das wikis
+
+330
+00:19:15,000 --> 00:19:17,730
+e muitas outras coisas
+
+331
+00:19:17,730 --> 00:19:19,860
+disse
+
+332
+00:19:19,860 --> 00:19:22,150
+você sabe quando lê código limpo
+
+333
+00:19:22,150 --> 00:19:24,950
+quando cada rotina que você lê
+
+334
+00:19:24,950 --> 00:19:28,480
+é basicamente o que você espera
+
+335
+00:19:28,480 --> 00:19:31,950
+é bem coisa do Ward usar
+
+336
+00:19:31,950 --> 00:19:36,150
+palavras tão simples, para dizer algo tão profundo
+
+337
+00:19:36,150 --> 00:19:37,950
+quando foi a última vez
+
+338
+00:19:37,950 --> 00:19:41,550
+que você leu código que era basicamente o que você esperava?
+
+339
+00:19:41,550 --> 00:19:43,150
+e como nós podemos
+
+340
+00:19:43,150 --> 00:19:44,930
+aprender a escrever código
+
+341
+00:19:44,930 --> 00:19:48,330
+que é basicamente o que nossos leitores esperam
+
+342
+00:19:48,330 --> 00:19:50,400
+é disso que esse curso se trata
+
+343
+00:19:50,400 --> 00:19:53,240
+aprender esse tipo de atenção ao detalhe
+
+344
+00:19:53,240 --> 00:19:55,100
+esse tipo de cuidado
+
+345
+00:19:55,100 --> 00:19:59,950
+esse tipo de jeito de ser simples e direto
+
+346
+00:19:59,950 --> 00:20:02,950
+é disso que Clean Code trata
+
+347
+00:20:04,788 --> 00:20:06,310
+a regra do escoteiro
+
+348
+00:20:09,826 --> 00:20:13,460
+Robert Baden-Powell, pai dos escoteiros
+
+349
+00:20:13,460 --> 00:20:15,710
+quando ia morrer, disse aos escoteiros
+
+350
+00:20:15,710 --> 00:20:18,680
+deixe o mundo melhor do que você encontrou
+
+351
+00:20:18,680 --> 00:20:20,880
+e se a gente fizesse o mesmo com nossos códigos?
+
+352
+00:20:20,880 --> 00:20:23,220
+que tal se adotássemos a regra
+
+353
+00:20:23,220 --> 00:20:26,910
+faça checkin dos seus módulos melhores que você fez checkout
+
+354
+00:20:26,910 --> 00:20:30,710
+sempre faça um ato aleatório de caridade
+
+355
+00:20:30,710 --> 00:20:33,860
+limpando seus módulos antes de fazer o checkin 
+
+356
+00:20:33,860 --> 00:20:35,700
+se todo mundo fizesse isso
+
+357
+00:20:35,700 --> 00:20:39,250
+o código ficaria cada vez mais melhor e melhor e melhor
+
+358
+00:20:39,256 --> 00:20:40,820
+e isso também
+
+359
+00:20:40,820 --> 00:20:44,520
+é o assunto desse curso
+
+360
+00:20:48,665 --> 00:20:52,430
+então chega dessa conversa fiada de Clean Code
+
+361
+00:20:52,430 --> 00:20:54,660
+então vamos entrar em algum código
+
+362
+00:20:54,660 --> 00:20:57,260
+vamos entrar no episódio 2
+
+363
+00:20:57,260 --> 00:20:58,970
+vamos garotos
+
