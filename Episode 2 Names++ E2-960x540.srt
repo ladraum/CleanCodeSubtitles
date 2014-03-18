@@ -1,0 +1,888 @@
+﻿1
+00:00:01,000 --> 00:00:03,000
+Episódio 2 - Nomes
+
+2
+00:00:04,000 --> 00:00:08,100
+Oi, eu sou o Tio Bob, e isto é Clean Code
+
+3
+00:00:41,640 --> 00:00:43,940
+Distância até o Sol
+
+4
+00:00:45,480 --> 00:00:47,000
+Que tal uma aula de astronomia?
+
+5
+00:00:49,700 --> 00:00:50,350
+O Sol
+
+6
+00:00:51,170 --> 00:00:53,700
+Sem ele, nós não poderíamos existir
+
+7
+00:00:53,700 --> 00:00:55,700
+nem continuarmos a existir
+
+8
+00:00:56,360 --> 00:00:58,640
+quando ele se levanta, nós levantamos
+
+9
+00:00:58,640 --> 00:01:00,740
+quando ele se põe, nós dormimos
+
+10
+00:01:00,740 --> 00:01:04,040
+ele é o metrônomo (medidor) das nossas vidas
+
+11
+00:01:04,040 --> 00:01:05,680
+nosso pequeno planeta
+
+12
+00:01:05,680 --> 00:01:09,770
+captura menos de duas partes em um bilhão da sua emissão de energia
+
+13
+00:01:09,770 --> 00:01:12,370
+e ainda está minúscula fração
+
+14
+00:01:12,370 --> 00:01:13,950
+dirige nosso clima
+
+15
+00:01:13,950 --> 00:01:16,810
+nosso ecossistema e nossas indústrias
+
+16
+00:01:20,130 --> 00:01:23,680
+o sol está à 93 milhões de milhas
+
+17
+00:01:23,680 --> 00:01:27,930
+a mesmo assim podemos vê-lo como um objeto no céu diurno
+
+18
+00:01:27,930 --> 00:01:31,530
+isso porque ele tem um milhão de milhas de diâmetro
+
+19
+00:01:31,530 --> 00:01:33,680
+e nós podemos sentir o seu calor
+
+20
+00:01:33,680 --> 00:01:36,650
+se ficarmos do lado de fora num bom dia de verão
+
+21
+00:01:36,650 --> 00:01:41,480
+isso porque a temperatura da superfície é de 5.000° C
+
+22
+00:01:41,480 --> 00:01:42,500
+em outras palavras
+
+23
+00:01:42,500 --> 00:01:44,500
+o sol é muito quente
+
+24
+00:01:44,500 --> 00:01:46,000
+muito grande
+
+25
+00:01:46,000 --> 00:01:49,450
+e, ainda bem, muito longe
+
+26
+00:01:52,162 --> 00:01:56,040
+como sabemos que o sol está à 93 milhões de milhas?
+
+27
+00:01:56,040 --> 00:01:58,540
+como podemos medir uma coisa dessas?
+
+28
+00:01:58,540 --> 00:02:00,710
+não podemos usar uma fita métrica gigange
+
+29
+00:02:00,710 --> 00:02:03,580
+não podemos ricochetear sinais de radar no sol
+
+30
+00:02:03,580 --> 00:02:05,830
+então, como sabemos?
+
+31
+00:02:07,444 --> 00:02:09,940
+no ano 270 a.c.
+
+32
+00:02:09,940 --> 00:02:13,400
+Aristarco de Samos usou esse pequeno truque
+
+33
+00:02:13,400 --> 00:02:17,650
+aqui temos uma imagem do sistema sol/lua/terra
+
+34
+00:02:17,650 --> 00:02:21,930
+Se a lua é exatamente metade quando vista da terra
+
+35
+00:02:21,930 --> 00:02:26,860
+então o angulo entre o sol, a lua e a terra é exatamente 90 graus
+
+36
+00:02:26,860 --> 00:02:30,800
+e se tanto o sol quanto a terra estão no céu ao mesmo tempo
+
+37
+00:02:30,800 --> 00:02:34,530
+então podemos medir o ângulo entre eles diretamente
+
+38
+00:02:34,530 --> 00:02:38,440
+acontesse então que distância da terra para o sol
+
+39
+00:02:38,440 --> 00:02:42,170
+é igual a distância da terra para a lua
+
+40
+00:02:42,170 --> 00:02:45,570
+dividido pelo seno daquele ângulo
+
+41
+00:02:45,570 --> 00:02:48,200
+Aristarco mediu aquele ângulo como
+
+42
+00:02:48,200 --> 00:02:49,840
+mais ou menos 3 graus
+
+43
+00:02:49,840 --> 00:02:53,000
+o que está errado por um fatos de mais ou menos 20
+
+44
+00:02:53,000 --> 00:02:56,660
+e então ele calculou a distância entre a terra e o sol
+
+45
+00:02:56,660 --> 00:03:00,440
+como 19 vezes a distância entre a terra e a lua
+
+46
+00:03:00,440 --> 00:03:03,440
+de novo, errando por um fator de 20
+
+47
+00:03:03,440 --> 00:03:07,390
+Aristarco descobriu que era um ângulo bem difícil de medir
+
+48
+00:03:08,905 --> 00:03:14,110
+Aristarco usou vários truques baseados na geometria dos eclipses lunares
+
+49
+00:03:14,110 --> 00:03:18,090
+para calcular a distância da terra para a lua
+
+50
+00:03:18,090 --> 00:03:20,330
+um desses truques foi o seguinte:
+
+51
+00:03:20,330 --> 00:03:25,330
+sabemos que a lua orbita em volta da terra a cada 28 dias
+
+52
+00:03:25,330 --> 00:03:30,200
+nós sabemos também que ela só fica 3 horas na sobra da terra
+
+53
+00:03:30,200 --> 00:03:32,200
+durante um eclipse lunar
+
+54
+00:03:32,200 --> 00:03:34,700
+a proporção entre esses dois tempos
+
+55
+00:03:34,700 --> 00:03:38,480
+os 28 dias para as 3 horas
+
+56
+00:03:38,480 --> 00:03:42,640
+é a mesma proporção entre as distâncias correspondentes:
+
+57
+00:03:42,640 --> 00:03:44,940
+a circunferência da órbita
+
+58
+00:03:44,940 --> 00:03:47,280
+e o tamanho da sombra
+
+59
+00:03:47,280 --> 00:03:52,480
+mas sabemos que o tamanho da sombra é mais ou menos o tamanho do diâmetro da terra
+
+60
+00:03:52,480 --> 00:03:55,380
+o que significa que podemos expressar a circunferência
+
+61
+00:03:55,380 --> 00:03:57,850
+em diâmetros da terra
+
+62
+00:03:57,850 --> 00:03:59,850
+divida isso por 2pi
+
+63
+00:03:59,850 --> 00:04:03,200
+e você consegue o raio em diâmetros da terra
+
+64
+00:04:03,200 --> 00:04:06,460
+Aristarco calculou isso como sendo 36
+
+65
+00:04:06,460 --> 00:04:09,120
+o que acabou sendo um número bem preciso
+
+66
+00:04:10,534 --> 00:04:12,280
+Passaram mais 30 anos
+
+67
+00:04:12,280 --> 00:04:16,020
+antes do diâmetro da terra ser medido por Eratóstenes
+
+68
+00:04:16,020 --> 00:04:21,600
+sim, é o mesmo cara que nos deu o Crivo de Eratóstenes, o algorítimo para descobrir números primos
+
+69
+00:04:21,600 --> 00:04:23,800
+Eratóstenes percebeu que
+
+70
+00:04:23,800 --> 00:04:26,840
+na cidade de Assuão, no Egito
+
+71
+00:04:26,840 --> 00:04:30,200
+no primeiro dia de verão ao meio dia
+
+72
+00:04:30,200 --> 00:04:32,620
+o sol estava exatamente em cima
+
+73
+00:04:32,620 --> 00:04:35,720
+objetos verticais não projetavam sombra
+
+74
+00:04:35,720 --> 00:04:40,260
+e o sol penetrava diretamente em poços profundos
+
+75
+00:04:40,260 --> 00:04:42,950
+Ele também percebeu que em Alexandria
+
+76
+00:04:42,950 --> 00:04:46,000
+uma cidade que ficava a 500 milhas ao sul
+
+77
+00:04:46,000 --> 00:04:50,510
+distância que ele mediu pelo tempo da viagem à camelo
+
+78
+00:04:50,510 --> 00:04:56,200
+o sol projetava uma sombra num ângulo de 7,2 graus
+
+79
+00:04:56,200 --> 00:04:58,160
+daí é só matemática simples
+
+80
+00:04:58,160 --> 00:05:01,360
+você pega um círculo, 360 graus
+
+81
+00:05:01,360 --> 00:05:03,550
+divide por 7,2
+
+82
+00:05:03,550 --> 00:05:05,220
+multiplica isso por 500
+
+83
+00:05:05,220 --> 00:05:07,750
+e isso te dá a circunferência da terra
+
+84
+00:05:07,750 --> 00:05:09,950
+mais ou menos 24 mil milhas
+
+85
+00:05:09,950 --> 00:05:12,850
+divide isso por pi e você tem o diâmetro da terra
+
+86
+00:05:12,850 --> 00:05:14,620
+de mais ou menos 8 mil milhas
+
+87
+00:05:14,620 --> 00:05:18,200
+de fato o número que Eratóstenes calculou
+
+88
+00:05:18,200 --> 00:05:21,290
+estava correto até somente alguns pontos percentuais
+
+89
+00:05:22,339 --> 00:05:25,750
+e então, com somente 5 medições
+
+90
+00:05:25,750 --> 00:05:28,550
+dois ângulos, duas durações
+
+91
+00:05:28,550 --> 00:05:31,350
+e uma medida de distância por camelo
+
+92
+00:05:31,350 --> 00:05:34,570
+esses dois caras, 2300 anos atrás
+
+93
+00:05:34,570 --> 00:05:37,730
+calcularam a escala do sistema solar
+
+94
+00:05:37,730 --> 00:05:40,910
+eles acertaram quase perfeitamente o diâmetro da terra
+
+95
+00:05:40,910 --> 00:05:43,930
+eles chegaram bem perto da distância entre a terra e o sol
+
+96
+00:05:43,930 --> 00:05:45,950
+285 mil milhas
+
+97
+00:05:45,950 --> 00:05:48,260
+é perto de 250
+
+98
+00:05:48,260 --> 00:05:51,260
+e eles chegaram na distância da terra até o sol
+
+99
+00:05:51,260 --> 00:05:54,460
+bom, nisso eles erraram por um fatos de 17
+
+100
+00:05:54,460 --> 00:05:57,460
+eles disseram que era 5.4 milhoes de milhas
+
+101
+00:05:57,460 --> 00:06:00,170
+mas nós sabemos que é 93 milhoes de milhas
+
+102
+00:06:00,170 --> 00:06:02,310
+mas eu não vou culpá-los por isso
+
+103
+00:06:02,310 --> 00:06:04,720
+não tem nada errado com os procedimentos deles
+
+104
+00:06:04,720 --> 00:06:06,620
+a técnica deles estava certa
+
+105
+00:06:06,620 --> 00:06:08,880
+só tinha algumas medições que eram complicadas de se fazer
+
+106
+00:06:08,880 --> 00:06:10,880
+para pessoas sem as ferramentas
+
+107
+00:06:10,880 --> 00:06:13,930
+de fato, essas medições não melhoraram
+
+108
+00:06:13,930 --> 00:06:16,650
+até o ano 1630
+
+109
+00:06:16,650 --> 00:06:20,020
+mas essa é uma história para uma outra hora
+
+110
+00:06:23,967 --> 00:06:26,290
+revele sua intenção
+
+111
+00:06:28,560 --> 00:06:30,550
+nomes
+
+112
+00:06:30,550 --> 00:06:32,620
+eles estão em todos os lugares em nosso software
+
+113
+00:06:32,620 --> 00:06:35,440
+apenas pense nas coisas que nomeamos
+
+114
+00:06:35,440 --> 00:06:38,040
+nós nomeamos nossos diretórios, nossos arquivos
+
+115
+00:06:38,040 --> 00:06:40,310
+nossas classes, nossos métodos
+
+116
+00:06:40,310 --> 00:06:43,750
+nós nomeamos nossas variáveis, nossos namespaces
+
+117
+00:06:43,750 --> 00:06:46,330
+de fato nós fazemos tanto isso
+
+118
+00:06:46,330 --> 00:06:49,000
+que provavelmente devemos saber como fazer direito
+
+119
+00:06:49,000 --> 00:06:54,750
+então esse episódio de Clean Code é inteiro sobre nomes
+
+120
+00:06:56,867 --> 00:06:59,730
+muitas das ideias desse episódio
+
+121
+00:06:59,730 --> 00:07:02,080
+são velhas, estão por aí por bastante tempo
+
+122
+00:07:02,080 --> 00:07:04,280
+elas são o resultado
+
+123
+00:07:04,280 --> 00:07:07,400
+dos pensadores da nossa área ao longo dos anos
+
+124
+00:07:07,400 --> 00:07:09,950
+um deles merece menção especial aqui
+
+125
+00:07:09,950 --> 00:07:11,660
+o seu nome é Tim Ottinger
+
+126
+00:07:11,660 --> 00:07:14,880
+em 1997 ele escreveu um artifo famoso chamado
+
+127
+00:07:14,880 --> 00:07:18,750
+Regras de nomeclatura de classes e variáveis do Ottinger
+
+128
+00:07:18,750 --> 00:07:24,200
+esse artigo se tornou o mais baixado no site do Object Mentor
+
+129
+00:07:24,200 --> 00:07:27,820
+e também se tornou a base para o capítulo de nomes
+
+130
+00:07:27,820 --> 00:07:30,460
+no livro do código limpo
+
+131
+00:07:30,460 --> 00:07:33,390
+então vamos olhar algumas das suas ideias agora
+
+132
+00:07:35,338 --> 00:07:37,200
+toda vez que você escolhe um nome
+
+133
+00:07:37,200 --> 00:07:40,500
+isso deve revelar a inteção da coisa que você está tentando nomear
+
+134
+00:07:40,500 --> 00:07:42,840
+se você precisa de um comentário para te ajudar com isso
+
+135
+00:07:42,840 --> 00:07:46,870
+então o nome que você escolheu não revela o suficiente da sua intenção
+
+136
+00:07:47,517 --> 00:07:50,970
+considere esse tipo óbvio de situação
+
+137
+00:07:50,970 --> 00:07:54,280
+houve um tempo em que isso seria considerado
+
+138
+00:07:54,280 --> 00:07:56,600
+bom estilo de documentção
+
+139
+00:07:56,600 --> 00:07:59,370
+até hoje existem padrões de código
+
+140
+00:07:59,370 --> 00:08:02,970
+sugerem que você coloque um comentário depois de todo nome de variável
+
+141
+00:08:02,970 --> 00:08:04,750
+mas francamente isso é tolice
+
+142
+00:08:04,750 --> 00:08:07,910
+é muito melhor ter uma variável
+
+143
+00:08:07,910 --> 00:08:11,870
+se auto descrever e funcionar como seu próprio comentário
+
+144
+00:08:13,043 --> 00:08:16,500
+agora vamos olhar esse exemplo um pouco mais complicado
+
+145
+00:08:16,500 --> 00:08:20,660
+essa função aqui deveria adicionar meses à uma data base
+
+146
+00:08:20,660 --> 00:08:23,160
+então se você adicionar dois meses
+
+147
+00:08:23,160 --> 00:08:25,900
+à 05 de dezembro de 1952
+
+148
+00:08:25,900 --> 00:08:30,050
+você terá 05 de fevereiro de 1953
+
+149
+00:08:30,050 --> 00:08:32,530
+o que você acha que esse yy significa?
+
+150
+00:08:32,530 --> 00:08:35,020
+ou este mm ou aquele dd?
+
+151
+00:08:35,020 --> 00:08:38,820
+é claro que estão relacionadas com anos, meses e dias
+
+152
+00:08:38,820 --> 00:08:42,420
+mas qual a natureza dessa relação e como elas estão relacionadas?
+
+153
+00:08:42,420 --> 00:08:47,060
+e o que é esse + 1 e -1 que está fazendo aqui?
+
+154
+00:08:47,060 --> 00:08:51,050
+isso deveria estar aí ou é um tipo de bug?
+
+155
+00:08:53,050 --> 00:08:57,250
+nós podemos melhor isso adicionando umas variáveis explicatórias
+
+156
+00:08:57,250 --> 00:08:58,910
+para revelar nossa inteção
+
+157
+00:08:58,910 --> 00:09:02,710
+ao ler isso, você poderá entender o código
+
+158
+00:09:02,710 --> 00:09:05,580
+simplismente olhando para os nomes das variáveis
+
+159
+00:09:05,580 --> 00:09:07,980
+note também que trocamos aquele
+
+160
+00:09:07,980 --> 00:09:12,550
++1 e -1 para mais JANEIRO e menos JANEIRO
+
+161
+00:09:12,550 --> 00:09:16,890
+isso deve lhe ajudar a entender o porque daquele +1 e -1
+
+162
+00:09:16,890 --> 00:09:21,570
+isso tem a ver que mm inicia em zero
+
+163
+00:09:23,513 --> 00:09:27,610
+o que eu quero que você note é que aqueles nomes de variáveis
+
+164
+00:09:27,610 --> 00:09:30,710
+formam um tipo de comentário compilável
+
+165
+00:09:30,710 --> 00:09:33,280
+que explicam a intenção do autor
+
+166
+00:09:33,280 --> 00:09:35,770
+havia um tempo, muito muito distante
+
+167
+00:09:35,770 --> 00:09:41,220
+que isso seria considerado um disperdício de ciclos de processador e memória
+
+168
+00:09:41,220 --> 00:09:44,220
+mas essas preocupações estão muito equivocadas
+
+169
+00:09:44,220 --> 00:09:47,600
+nós sabemos que o verdadeiro custo do software
+
+170
+00:09:47,600 --> 00:09:49,000
+está na manutenção
+
+171
+00:09:49,000 --> 00:09:52,770
+e mesmo que custe mais alguns bits e ciclos
+
+172
+00:09:52,770 --> 00:09:55,660
+provavelmente vale a pena se torna nosso código
+
+173
+00:09:55,660 --> 00:09:58,420
+mais fácil de ler e de entender
+
+174
+00:09:58,420 --> 00:10:01,720
+além disso, os compiladores hoje em dia são tão bons
+
+175
+00:10:01,720 --> 00:10:07,420
+que provavelmente eles devem otimizar esses bits e ciclos a mais
+
+176
+00:10:08,759 --> 00:10:10,080
+descreva o problema
+
+177
+00:10:12,162 --> 00:10:15,640
+nomes que descrevem detalhes da implementação
+
+178
+00:10:15,640 --> 00:10:17,640
+não revelam a intenção
+
+179
+00:10:17,640 --> 00:10:22,150
+eles falam mais sobre como está o código e porque foi escrito desse jeito
+
+180
+00:10:22,150 --> 00:10:25,040
+do que do problema que está sendo resolvido
+
+181
+00:10:25,040 --> 00:10:26,710
+para um exemplo disso
+
+182
+00:10:26,710 --> 00:10:30,000
+quero que você olhe esse código
+
+183
+00:10:33,183 --> 00:10:35,680
+olhe para esses nomes
+
+184
+00:10:35,680 --> 00:10:38,280
+você consegue me dizer o que eles significam?
+
+185
+00:10:38,280 --> 00:10:40,640
+os comentários te ajudam de alguma maneira?
+
+186
+00:10:40,640 --> 00:10:42,640
+quer dizer, olhe esses comentários
+
+187
+00:10:42,640 --> 00:10:46,170
+a primeira e a última palavra são completamente redundantes
+
+188
+00:10:46,170 --> 00:10:49,660
+útil? sério? eu espero que seja útil
+
+189
+00:10:49,660 --> 00:10:52,200
+eu odiaria pensar que é inútil
+
+190
+00:10:52,200 --> 00:10:54,280
+e a terceira palavra: constantes
+
+191
+00:10:54,280 --> 00:10:57,130
+sério? você acha que são contantes? não? sério?
+
+192
+00:10:57,130 --> 00:10:58,550
+obrigado por isso
+
+193
+00:10:58,550 --> 00:11:01,550
+a única palavra útil alí é range
+
+194
+00:11:01,550 --> 00:11:03,500
+mas mesmo isso não ajuda muito
+
+195
+00:11:03,500 --> 00:11:05,500
+range? range do quê?
+
+196
+00:11:05,500 --> 00:11:07,190
+do que se quer saber o range?
+
+197
+00:11:07,190 --> 00:11:10,160
+e, além disso, range é constante?
+
+198
+00:11:10,160 --> 00:11:11,680
+o que é range?
+
+199
+00:11:11,680 --> 00:11:13,910
+e depois, primeiro
+
+200
+00:11:13,910 --> 00:11:15,350
+primeiro o quê?
+
+201
+00:11:15,350 --> 00:11:16,880
+último (quiz dizer segundo), último o quê?
+
+202
+00:11:16,880 --> 00:11:21,130
+ambos? aparentemente temos duas coisas aqui
+
+203
+00:11:21,130 --> 00:11:23,130
+este código é bem misterioso
+
+204
+00:11:23,130 --> 00:11:25,230
+e o que vamos ter que fazer é
+
+205
+00:11:25,230 --> 00:11:28,930
+irmos até o código que usa esses nomes
+
+206
+00:11:28,930 --> 00:11:31,600
+e tentar descobrir o que esses nomes significam
+
+207
+00:11:31,600 --> 00:11:32,990
+mas isso é uma vergonha
+
+208
+00:11:32,990 --> 00:11:36,760
+quando você tem que ler o código para entender os nomes
+
+209
+00:11:36,760 --> 00:11:40,460
+o nome praticamente falhou em comunicar
+
+210
+00:11:42,019 --> 00:11:44,570
+então estamos aqui embaixo no código
+
+211
+00:11:44,570 --> 00:11:50,600
+onde INCLUDE_AMBOS, INCLUDE_PRIMEIRO e INCLUDE_SEGUNDO são todos usados
+
+212
+00:11:50,600 --> 00:11:51,800
+esse método
+
+213
+00:11:51,800 --> 00:11:55,320
+parece que verifica se uma dada data
+
+214
+00:11:55,320 --> 00:11:59,260
+está entre uma data de início e de término
+
+215
+00:11:59,260 --> 00:12:02,760
+a propósito, é daí que a palavra range veio
+
+216
+00:12:02,760 --> 00:12:05,960
+note os quatro cases
+
+217
+00:12:05,960 --> 00:12:10,120
+a única coisa que muda neles são os sinais de igual
+
+218
+00:12:10,120 --> 00:12:11,800
+então os quatro cases apenas
+
+219
+00:12:11,800 --> 00:12:16,240
+escolhem quando os limites são incluídos no range
+
+220
+00:12:16,240 --> 00:12:19,440
+é daí que saiu a palavra INCLUDE
+
+221
+00:12:19,440 --> 00:12:21,140
+mas o que primeiro significa?
+
+222
+00:12:21,140 --> 00:12:22,840
+o que segundo significa?
+
