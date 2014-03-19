@@ -886,3 +886,379 @@ mas o que primeiro significa?
 00:12:21,140 --> 00:12:22,840
 o que segundo significa?
 
+223
+00:12:22,840 --> 00:12:24,640
+bem, se você olhar o código aqui
+
+224
+00:12:24,640 --> 00:12:28,110
+primeiro representa a data de início, ou o limite inferior
+
+225
+00:12:28,110 --> 00:12:33,740
+e segundo representa a data de término, ou o limite superior do range
+
+226
+00:12:34,971 --> 00:12:36,300
+novamente
+
+227
+00:12:36,300 --> 00:12:40,490
+se você precisa ir no código para entender o nome
+
+228
+00:12:40,490 --> 00:12:42,450
+é um nome ruim
+
+229
+00:12:42,450 --> 00:12:43,950
+INCLUDE_PRIMEIRO
+
+230
+00:12:43,950 --> 00:12:45,750
+simplesmente não é um bom nome
+
+231
+00:12:45,750 --> 00:12:49,840
+para o conceito de incluir o limite inferior em um range
+
+232
+00:12:49,840 --> 00:12:53,260
+INCLUDE_LIMITE_INFERIOR pode ser um nome melhor
+
+233
+00:12:53,260 --> 00:12:56,680
+mas eu me pergunto se é o melhor
+
+234
+00:12:57,394 --> 00:12:59,230
+acontece que ranges como este
+
+235
+00:12:59,230 --> 00:13:02,670
+são um conceito matemático bem conhecido chamado intervalos
+
+236
+00:13:02,670 --> 00:13:04,220
+intervalos podem ser abertos
+
+237
+00:13:04,220 --> 00:13:06,700
+o que significa que ele não inclui nenhum dos limites
+
+238
+00:13:06,700 --> 00:13:08,160
+ou eles podem ser fechados
+
+239
+00:13:08,160 --> 00:13:10,500
+o que significa que ele inclui os dois limites
+
+240
+00:13:10,500 --> 00:13:12,350
+ou eles podem ser abertos à direita
+
+241
+00:13:12,350 --> 00:13:14,120
+incluindo somente o limite inferior
+
+242
+00:13:14,120 --> 00:13:15,720
+ou eles podem ser abertos à esquerda
+
+243
+00:13:15,720 --> 00:13:18,470
+incluindo somente o limite superior
+
+244
+00:13:19,549 --> 00:13:21,140
+então
+
+245
+00:13:21,140 --> 00:13:23,770
+no lugar de constantes final int 
+
+246
+00:13:23,770 --> 00:13:26,900
+devemos usar um enum parecido com este
+
+247
+00:13:26,900 --> 00:13:28,200
+é muito melhor
+
+248
+00:13:28,200 --> 00:13:30,950
+ele segue uma convenção matemática conhecida
+
+249
+00:13:30,950 --> 00:13:34,350
+e até menciona a palavra data
+
+250
+00:13:36,066 --> 00:13:37,520
+lembre-se
+
+251
+00:13:37,520 --> 00:13:40,270
+nomes não são para sua conveniência
+
+252
+00:13:40,270 --> 00:13:42,220
+eles são sua principal ferramenta
+
+253
+00:13:42,220 --> 00:13:44,350
+para comunicar sua intenção
+
+254
+00:13:44,350 --> 00:13:48,970
+e comunicar intenção é sempre sua prioridade principal
+
+255
+00:13:48,970 --> 00:13:52,880
+e até mais importante que se certificar que o código funcione
+
+256
+00:13:52,880 --> 00:13:54,800
+então sempre escolha nomes
+
+257
+00:13:54,800 --> 00:13:57,840
+que comuniquem sua intenção
+
+258
+00:14:02,125 --> 00:14:04,450
+evite desinformação
+
+259
+00:14:06,463 --> 00:14:10,560
+você já viu um nome no código que não significava o que dizia?
+
+260
+00:14:10,560 --> 00:14:12,450
+isso é desinformação
+
+261
+00:14:12,450 --> 00:14:14,200
+e desinformar
+
+262
+00:14:14,200 --> 00:14:16,800
+dizer algo diferente do que significa
+
+263
+00:14:16,800 --> 00:14:20,570
+é um dos piores pecados que um programador pode fazer
+
+264
+00:14:21,011 --> 00:14:25,480
+o que você supõe que o autor queria dizer com o nome dessa classe
+
+265
+00:14:25,480 --> 00:14:27,050
+SerialDate
+
+266
+00:14:27,050 --> 00:14:29,950
+o que é serializavel em uma data?
+
+267
+00:14:29,950 --> 00:14:33,580
+existe um grande comentário, então suponho que podemos lê-lo, mas
+
+268
+00:14:33,580 --> 00:14:37,580
+afinal, se você precisa ir no comentário para entender o nome
+
+269
+00:14:37,580 --> 00:14:39,580
+você está usando um nome errado
+
+270
+00:15:02,019 --> 00:15:05,160
+hum... aquele comentário
+
+271
+00:15:05,160 --> 00:15:08,910
+ele fala muito sobre o Excel
+
+272
+00:15:08,910 --> 00:15:12,590
+ele fala também sobre imutabilidade
+
+273
+00:15:12,590 --> 00:15:17,960
+e ele fala sobre representar um dia ao invés de um tempo
+
+274
+00:15:17,960 --> 00:15:23,260
+mas ele não explica porque essa classe é chamada SerialDate
+
+275
+00:15:23,260 --> 00:15:25,509
+então eu acho que o que vamos ter que fazer
+
+276
+00:15:25,509 --> 00:15:27,630
+é dar uma olhada no código
+
+277
+00:15:27,630 --> 00:15:28,779
+o problema com isso
+
+278
+00:15:28,779 --> 00:15:32,350
+é que quando você tem que ir no código para entender um nome
+
+279
+00:15:32,350 --> 00:15:34,450
+aquele nome não está funcionando para você
+
+280
+00:15:34,885 --> 00:15:35,900
+ok
+
+281
+00:15:35,900 --> 00:15:39,090
+então esse é o método toSerial aqui na minha tela
+
+282
+00:15:39,090 --> 00:15:42,590
+ele tem um grande comentário que meio que explica tudo
+
+283
+00:15:42,590 --> 00:15:46,190
+aparentemente a data é representada por um inteiro
+
+284
+00:15:46,190 --> 00:15:48,860
+o número de dias desde
+
+285
+00:15:48,860 --> 00:15:51,860
+primeiro de janeiro de 1900
+
+286
+00:15:51,860 --> 00:15:53,020
+mais ou menos
+
+287
+00:15:53,020 --> 00:15:54,800
+e parece que é por isso
+
+288
+00:15:54,800 --> 00:15:58,800
+que o autor acredita que a data é um número serializável
+
+289
+00:16:00,343 --> 00:16:01,580
+mas espere
+
+290
+00:16:01,580 --> 00:16:03,380
+mas essa é uma classe abstrata
+
+291
+00:16:03,380 --> 00:16:05,880
+e toSerial é um método abstrato
+
+292
+00:16:05,880 --> 00:16:09,750
+como essa classe pode saber como toSerial foi implementada?
+
+293
+00:16:09,750 --> 00:16:13,050
+qualquer derivação poderia implementar do jeito que quiser
+
+294
+00:16:13,050 --> 00:16:15,850
+não, na verdade o que o autor fez
+
+295
+00:16:15,850 --> 00:16:18,250
+foi ele deu um nome concreto
+
+296
+00:16:18,250 --> 00:16:19,770
+para uma classe abstrata
+
+297
+00:16:19,770 --> 00:16:22,860
+e isso é desinformação
+
+298
+00:16:23,600 --> 00:16:26,220
+além disso, o que serial significa?
+
+299
+00:16:26,220 --> 00:16:28,800
+o comentário diz que é um número serial, mas
+
+300
+00:16:28,800 --> 00:16:31,280
+numeros seriais não precisam ser consecutivos
+
+301
+00:16:31,280 --> 00:16:33,780
+eles não precisam nem ser alfanuméricos
+
+302
+00:16:33,780 --> 00:16:35,600
+olhe para esse número serial
+
+303
+00:16:36,780 --> 00:16:39,320
+você não acha que essa empresa realmente fez
+
+304
+00:16:39,320 --> 00:16:43,320
+12 trilhões desses aparelhos, não acha?
+
+305
+00:16:43,920 --> 00:16:49,050
+não, número serial é apenas a metáfora errada para essa classe
+
+306
+00:16:49,050 --> 00:16:51,750
+eu suponho que seria mais preciso chamá-la
+
+307
+00:16:51,750 --> 00:16:53,480
+data ordinal, mas
+
+308
+00:16:53,480 --> 00:16:56,600
+a palavra ordinal não é muito representativa
+
+309
+00:16:56,600 --> 00:16:59,260
+não, essa classe deveria se chamar data
+
+310
+00:16:59,260 --> 00:17:02,060
+ou dia, ou dia da data
+
+311
+00:17:02,060 --> 00:17:04,060
+ou dia do calendário
+
+312
+00:17:04,060 --> 00:17:05,800
+ou algum nome abstrato
+
+313
+00:17:05,800 --> 00:17:08,520
+que descreva um dia
+
+314
+00:17:08,520 --> 00:17:10,100
+ao invés de um tempo
+
+315
+00:17:10,100 --> 00:17:14,820
+o nome deve ser tão abstrato quanto a classa
+
+316
+00:17:30,534 --> 00:17:33,160
+aqui temos outro exemplo de desinformação
+
