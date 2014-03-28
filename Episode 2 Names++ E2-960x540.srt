@@ -1474,3 +1474,195 @@ isso é boooooooooom
 00:20:30,313 --> 00:20:32,670
 não faça isso com os seus leitores
 
+370
+00:20:32,670 --> 00:20:34,990
+dê a eles nomes que eles possam pronunciar
+
+371
+00:20:34,990 --> 00:20:39,130
+não os force a inventar uma pronúncia complicada
+
+372
+00:20:39,130 --> 00:20:40,830
+para suas abreviações
+
+373
+00:20:42,192 --> 00:20:45,770
+por exemplo, como você pronunciaria isso?
+
+374
+00:20:45,770 --> 00:20:47,700
+consegue ver o sublinhado verde?
+
+375
+00:20:47,700 --> 00:20:51,480
+até minha IDE sabe que tem alguma coisa errada com esse nome
+
+376
+00:20:51,480 --> 00:20:54,330
+então, se você tivesse isso, como você pronunciaria?
+
+377
+00:20:54,330 --> 00:20:55,600
+get Y(porque)
+
+378
+00:20:55,600 --> 00:20:56,350
+get Y(porque), Y(porque)
+
+379
+00:20:56,350 --> 00:20:57,120
+get Y(porque), Y(porque), Y(porque)
+
+380
+00:20:57,120 --> 00:20:58,880
+get  Y(porque), Y(porque), Y(porque), Y(porque)!!!
+
+381
+00:21:00,243 --> 00:21:02,120
+aquilo não poderia ser
+
+382
+00:21:02,120 --> 00:21:04,120
+getAno?
+
+383
+00:21:09,186 --> 00:21:12,430
+e que tal este?
+
+384
+00:21:12,430 --> 00:21:15,850
+que eu encontrei em uma conhecida ferramenta de código aberto
+
+385
+00:21:15,850 --> 00:21:17,550
+m_qdox?
+
+386
+00:21:17,550 --> 00:21:19,550
+ppp?
+
+387
+00:21:23,400 --> 00:21:26,400
+sem dúvida aqueles nomes eram convenientes para os autores
+
+388
+00:21:26,400 --> 00:21:28,500
+mas e quanto aos leitoes?
+
+389
+00:21:28,500 --> 00:21:32,120
+eu não quero estar em uma sessão de programação em par
+
+390
+00:21:32,120 --> 00:21:37,080
+dizendo, vamos pegar o m_qdox e ppplizarmos ele aqui
+
+391
+00:21:38,048 --> 00:21:41,340
+eu achei esses nomes em outra ferramenta de código aberto
+
+392
+00:21:41,340 --> 00:21:43,480
+como você pronunciaria esses nomes?
+
+393
+00:21:43,480 --> 00:21:45,000
+q - t - y testes?
+
+394
+00:21:45,000 --> 00:21:46,540
+q - t - y - passou - m
+
+395
+00:21:46,540 --> 00:21:48,400
+q - t - y - passou - s
+
+396
+00:21:48,400 --> 00:21:52,700
+o que significa aquele m e s?
+
+397
+00:21:52,700 --> 00:21:55,800
+isso não poderia testes totais?
+
+398
+00:21:55,800 --> 00:21:57,100
+testes passados?
+
+399
+00:21:57,100 --> 00:21:59,520
+cenários passados? métodos passados?
+
+400
+00:21:59,520 --> 00:22:02,520
+testes pulados? testes falhados?
+
+401
+00:22:02,520 --> 00:22:04,520
+isso não teria sido melhor?
+
+402
+00:22:06,576 --> 00:22:10,560
+lembre-se: nomes não são apenas para nossa conveniência
+
+403
+00:22:10,560 --> 00:22:13,930
+eles são as ferramentas que usamos para nos comunicar
+
+404
+00:22:13,930 --> 00:22:16,200
+outros precisam se comunicar também
+
+405
+00:22:16,200 --> 00:22:18,880
+portanto faça seus nomes pronunciáveis
+
+406
+00:22:18,880 --> 00:22:22,880
+para que outros possam utilizar para se comunicar
+
+407
+00:22:27,397 --> 00:22:29,720
+evite codificação
+
+408
+00:22:31,568 --> 00:22:34,760
+a muito tempo atrás, numa terra distante
+
+409
+00:22:34,760 --> 00:22:36,890
+lá vivia um nome chamado Charles
+
+410
+00:22:36,890 --> 00:22:40,300
+Charles era um programador C
+
+411
+00:22:40,811 --> 00:22:42,811
+como todo programador C
+
+412
+00:22:42,811 --> 00:22:45,820
+Charles precisava manter controle sobre os tipos das variáveis
+
+413
+00:22:45,820 --> 00:22:50,000
+então ele inventou um sistema de codificação
+
+414
+00:22:51,221 --> 00:22:55,100
+ele usou prefixos para descrever o que havia nas variáveis
+
+415
+00:22:55,100 --> 00:22:58,280
+esses prefixos correspondiam aos tipos
+
+416
+00:22:58,280 --> 00:23:00,280
+da informção contida
+
+417
+00:23:00,280 --> 00:23:02,960
+então por exemplo ele usou P
+
