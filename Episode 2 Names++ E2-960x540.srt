@@ -1666,3 +1666,411 @@ da informção contida
 00:23:00,280 --> 00:23:02,960
 então por exemplo ele usou P
 
+418
+00:23:02,960 --> 00:23:04,680
+quando ele precisava de um ponteiro
+
+419
+00:23:04,680 --> 00:23:09,500
+ele usou Sz para string terminada em zero
+
+420
+00:23:09,500 --> 00:23:12,940
+PSz significa ponteiro para string terminada em zero
+
+421
+00:23:12,940 --> 00:23:16,480
+Ch significa caractere, C significa contador
+
+422
+00:23:16,480 --> 00:23:17,990
+B significa booleano
+
+423
+00:23:17,990 --> 00:23:20,704
+de fato ele tinha vários desses prefixos
+
+424
+00:23:20,704 --> 00:23:24,210
+que ele colocava na frente das variáveis para expressar seu tipo
+
+425
+00:23:25,520 --> 00:23:30,144
+Charles recentemente retornou de uma viagem à Estação Espacial Russa
+
+426
+00:23:30,140 --> 00:23:33,680
+Charles vive em um iate do tamanho de um pequeno navio de guerra
+
+427
+00:23:33,680 --> 00:23:35,536
+ele tem seu próprio helicóptero
+
+428
+00:23:35,530 --> 00:23:38,240
+eu estive nesse iate, é bem impressionante
+
+429
+00:23:38,240 --> 00:23:41,296
+Charles era o arquiteto chefe da Microsoft
+
+430
+00:23:41,290 --> 00:23:44,256
+durante os tempos dourados da era do DOS
+
+431
+00:23:44,870 --> 00:23:47,920
+o sobrenome do Charles é Simonyi
+
+432
+00:23:47,920 --> 00:23:49,088
+ele é húngaro
+
+433
+00:23:49,080 --> 00:23:51,168
+então sua anotação é conhecida como
+
+434
+00:23:51,168 --> 00:23:53,160
+anotação húngara
+
+435
+00:23:54,880 --> 00:23:57,280
+então, se você quer ser um bilionário
+
+436
+00:23:57,280 --> 00:24:01,280
+tudo que você tem que fazer é inventar uma tola anotação de prefixos
+
+437
+00:24:01,750 --> 00:24:02,832
+hoje em dia
+
+438
+00:24:02,830 --> 00:24:05,040
+nossas IDEs são tão poderosas
+
+439
+00:24:05,040 --> 00:24:08,976
+que tudo que precisamos fazer é passar o mouse sobre uma variável para saber que tipo é
+
+440
+00:24:08,970 --> 00:24:11,808
+nós não precisamos ter uma codificação de prefixos
+
+441
+00:24:11,800 --> 00:24:14,464
+não precisamos sair caçando por todos os lugares
+
+442
+00:24:14,460 --> 00:24:17,664
+a IDE nos diz isso quando precisamos saber
+
+443
+00:24:17,660 --> 00:24:18,592
+e além disso
+
+444
+00:24:18,590 --> 00:24:21,712
+erros de tipagem serão pegos pelos nossos compiladores
+
+445
+00:24:21,710 --> 00:24:23,900
+e pelos nossos testes unitários
+
+446
+00:24:24,920 --> 00:24:26,821
+então, codificações como esta
+
+447
+00:24:26,820 --> 00:24:29,177
+passam a não ter mais sentido hoje em dia
+
+448
+00:24:29,170 --> 00:24:31,257
+até as mais comuns, como
+
+449
+00:24:31,250 --> 00:24:34,308
+C para classe e I para interface
+
+450
+00:24:34,300 --> 00:24:37,645
+e até mesmo m_ para variáveis membros
+
+451
+00:24:37,640 --> 00:24:39,520
+elas tendem a escurecer o código
+
+452
+00:24:39,520 --> 00:24:41,971
+e tornar mais difícil de ler do que o necessário
+
+453
+00:24:41,971 --> 00:24:44,830
+então eu não as usaria
+
+454
+00:24:46,930 --> 00:24:47,954
+no fim das contas
+
+455
+00:24:47,950 --> 00:24:52,605
+IConta é de qualquer maneira mais informativo que Conta?
+
+456
+00:24:54,510 --> 00:24:56,708
+porque os usuários deveriam saber
+
+457
+00:24:56,700 --> 00:24:59,828
+se a classe que eles estão usando é uma abstração
+
+458
+00:25:00,510 --> 00:25:05,085
+codificações como esta parecem estar adicionando informações importantes
+
+459
+00:25:05,080 --> 00:25:08,502
+mas na verdade elas são apenas distrações
+
+460
+00:25:08,500 --> 00:25:10,365
+elas não adicionam nada porque
+
+461
+00:25:10,360 --> 00:25:12,251
+a IDE já sabe o tipo
+
+462
+00:25:12,250 --> 00:25:14,845
+e está perfeitamente feliz em te mostrar isso
+
+463
+00:25:14,840 --> 00:25:17,680
+e o seu compilador e seus testes unitários
+
+464
+00:25:17,680 --> 00:25:20,600
+vão lhe proteger de qualquer erro de tipagem
+
+465
+00:25:23,440 --> 00:25:24,754
+e além disso
+
+466
+00:25:24,754 --> 00:25:28,580
+você tem certeza que você quer que seu código se pareça com isso ?
+
+467
+00:25:29,410 --> 00:25:33,725
+então, não vamos mais ficar presos aos anos 90
+
+468
+00:25:33,720 --> 00:25:36,582
+é hora de abandonar os tolos prefixos
+
+469
+00:25:36,580 --> 00:25:38,148
+os m_
+
+470
+00:25:38,140 --> 00:25:40,537
+os I, todas essas coisas
+
+471
+00:25:40,530 --> 00:25:42,251
+use apenas nomes
+
+472
+00:25:42,250 --> 00:25:43,862
+e deixe sua IDE
+
+473
+00:25:43,860 --> 00:25:44,994
+seu compilador
+
+474
+00:25:44,994 --> 00:25:48,220
+e seus testes unitários fazerem o resto 
+
+475
+00:25:52,703 --> 00:25:55,030
+tempos verbais
+
+476
+00:25:57,640 --> 00:26:00,925
+já foi dito mas vale a pena repetir
+
+477
+00:26:01,570 --> 00:26:04,000
+classes e variáveis são substantivos
+
+478
+00:26:04,000 --> 00:26:05,931
+métodos são verbos
+
+479
+00:26:05,930 --> 00:26:08,065
+o nome de uma classe ou variável
+
+480
+00:26:08,060 --> 00:26:11,430
+deve sempre ser um substantivo ou uma frase substantiva, como
+
+481
+00:26:11,430 --> 00:26:13,590
+conta, ou
+
+482
+00:26:13,590 --> 00:26:15,360
+analisador de mensagem
+
+483
+00:26:15,360 --> 00:26:17,960
+e ignore e evite
+
+484
+00:26:17,960 --> 00:26:20,240
+pequenas palavras ruídos como
+
+485
+00:26:20,240 --> 00:26:22,010
+gerenciador,
+
+486
+00:26:22,010 --> 00:26:24,140
+processador,
+
+487
+00:26:24,140 --> 00:26:26,140
+dados,
+
+488
+00:26:26,140 --> 00:26:28,140
+info
+
+489
+00:26:28,140 --> 00:26:31,220
+palavras como essas são apenas bobagens para
+
+490
+00:26:31,220 --> 00:26:33,160
+eu não sei como chamar isso
+
+491
+00:26:34,610 --> 00:26:37,980
+variáveis geralmente contém instâncias de classes
+
+492
+00:26:37,980 --> 00:26:40,480
+então elas devem ser substantivos também
+
+493
+00:26:40,480 --> 00:26:41,060
+de fato
+
+494
+00:26:41,060 --> 00:26:45,230
+nomes de variáveis geralmente são derivadas do nome da suas classes
+
+495
+00:26:45,230 --> 00:26:46,120
+por exemplo
+
+496
+00:26:46,120 --> 00:26:48,890
+conta ou contaDeposito
+
+497
+00:26:48,890 --> 00:26:52,440
+pode conter uma instância de uma classe Conta
+
+498
+00:26:54,490 --> 00:26:57,790
+variáveis booleanas devem ser escritas como predicados
+
+499
+00:26:57,790 --> 00:26:59,370
+você pode ver isso aqui
+
+500
+00:26:59,370 --> 00:27:01,950
+eVazio ou eFinalizado
+
+501
+00:27:01,950 --> 00:27:03,380
+estes são predicados
+
+502
+00:27:03,380 --> 00:27:05,630
+e eles lêem bem em um condicional SE
+
+503
+00:27:05,630 --> 00:27:07,960
+por exemplo se eVazio
+
+504
+00:27:08,870 --> 00:27:11,040
+métodos devem ser verbos
+
+505
+00:27:11,040 --> 00:27:13,090
+ou frases de ação como
+
+506
+00:27:13,090 --> 00:27:16,300
+enviarPagamento ou pegarPreco
+
+507
+00:27:16,300 --> 00:27:20,140
+novamente, eles lêem bem em frases imperativas
+
+508
+00:27:20,140 --> 00:27:22,750
+mas se o método retorna um booleano
+
+509
+00:27:22,750 --> 00:27:24,820
+então deve ser escrito como um predicado
+
+510
+00:27:24,820 --> 00:27:27,360
+por exemplo, eEnviavel
+
+511
+00:27:27,360 --> 00:27:29,940
+porque provavelmente vai ser usado em um condicional SE
+
+512
+00:27:29,940 --> 00:27:33,140
+e nós queremos que leia bem dentro do condicional SE
+
+513
+00:27:35,430 --> 00:27:38,480
+não use substantivo para assessores como
+
+514
+00:27:38,480 --> 00:27:41,070
+primeiroNome ou razaoDeCombustivel
+
+515
+00:27:41,070 --> 00:27:43,880
+ao invés disso use o verbo get
+
+516
+00:27:43,880 --> 00:27:47,780
+como em getPrimeiroNome ou getRazaoDeCombustivel
+
+517
+00:27:49,310 --> 00:27:52,050
+propriedades, como em C#
+
+518
+00:27:52,050 --> 00:27:55,420
+são realmente métodos fingindo ser variáveis
+
+519
+00:27:55,420 --> 00:27:58,370
+então eles devem ser substantivos também
+
