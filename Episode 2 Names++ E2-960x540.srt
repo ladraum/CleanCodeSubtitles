@@ -1892,7 +1892,7 @@ seu compilador
 
 474
 00:25:44,994 --> 00:25:48,220
-e seus testes unitários fazerem o resto 
+e seus testes unitários fazerem o resto
 
 475
 00:25:52,703 --> 00:25:55,030
@@ -2073,4 +2073,180 @@ são realmente métodos fingindo ser variáveis
 519
 00:27:55,420 --> 00:27:58,370
 então eles devem ser substantivos também
+
+520
+00:27:58,370 --> 00:27:59,870
+e se forem booleanos?
+
+521
+00:27:59,870 --> 00:28:02,020
+então eles devem ser predicados
+
+522
+00:28:04,401 --> 00:28:06,401
+enums tendem a ser estados
+
+523
+00:28:06,401 --> 00:28:08,400
+ou descritores de objetos
+
+524
+00:28:08,400 --> 00:28:10,690
+então normalmente são adjetivos
+
+525
+00:28:14,910 --> 00:28:16,450
+lembre-se
+
+526
+00:28:16,450 --> 00:28:18,460
+é muito mais fácil ler código
+
+527
+00:28:18,460 --> 00:28:22,240
+se as afirmações podem ser lidas como
+
+528
+00:28:22,240 --> 00:28:24,470
+prosa bem escrita
+
+529
+00:28:24,470 --> 00:28:26,860
+note como os substantivos
+
+530
+00:28:26,860 --> 00:28:30,480
+verbos e predicados nestas duas linhas de código
+
+531
+00:28:30,480 --> 00:28:33,200
+fazem com que seja bem fácil de ler
+
+532
+00:28:33,200 --> 00:28:34,450
+SE ( funcionario.estaAtrasado() ) funcionario.repreenda();
+
+533
+00:28:38,160 --> 00:28:39,870
+um dos nomes nesses códigos
+
+534
+00:28:39,870 --> 00:28:41,460
+viola essas regras
+
+535
+00:28:41,460 --> 00:28:44,300
+consegue achá-lo?
+
+536
+00:28:44,300 --> 00:28:45,860
+ali está ele
+
+537
+00:28:45,860 --> 00:28:48,710
+menosQue24Bits
+
+538
+00:28:48,710 --> 00:28:50,800
+isto é um adjetivo
+
+539
+00:28:50,800 --> 00:28:52,690
+soa como um predicado
+
+540
+00:28:52,690 --> 00:28:55,140
+como algo que você gostaria de usar em um condicional SE
+
+541
+00:28:55,140 --> 00:28:58,300
+SE ( menosQue24Bits )
+
+542
+00:28:58,300 --> 00:29:00,300
+aquele nome deveria ser um substantivo
+
+543
+00:29:00,300 --> 00:29:01,870
+algo do tipo
+
+544
+00:29:01,870 --> 00:29:04,960
+bitsParciais ou bitsEmGrupoParcial
+
+545
+00:29:04,960 --> 00:29:08,250
+ou bitsRestantes
+
+546
+00:29:10,100 --> 00:29:12,050
+alguns anos atrás eu escrevi uma função
+
+547
+00:29:12,050 --> 00:29:13,780
+que tinha essa assinatura
+
+548
+00:29:13,780 --> 00:29:18,340
+public boolean set ( String nome, String valor)
+
+549
+00:29:18,340 --> 00:29:19,700
+isso viola as regras
+
+550
+00:29:19,700 --> 00:29:21,700
+porque set é um verbo
+
+551
+00:29:21,700 --> 00:29:23,700
+mas esta função retorna um booleano
+
+552
+00:29:23,700 --> 00:29:25,250
+e isso me trouxe problemas depois
+
+553
+00:29:25,250 --> 00:29:28,150
+porque quando eu tentei usar essa função em um condicional SE
+
+554
+00:29:28,150 --> 00:29:29,610
+aqui está o condicional
+
+555
+00:29:29,610 --> 00:29:33,380
+SE ( set ( "usuario", "tio bob" ) ) {
+
+556
+00:29:33,380 --> 00:29:35,380
+o que eu estou perguntanto aqui ?
+
+557
+00:29:35,380 --> 00:29:37,450
+estou perguntando se
+
+558
+00:29:37,450 --> 00:29:40,400
+usuário já foi setado para "tio bob"?
+
+559
+00:29:40,400 --> 00:29:43,800
+ou eu estava setando o usuário para "tio bob"
+
+560
+00:29:43,800 --> 00:29:47,060
+e perguntando se a operação teve sucesso
+
+561
+00:29:47,060 --> 00:29:50,000
+é difícil dizer só olhando o condicional SE
+
+562
+00:29:52,740 --> 00:29:55,040
+não tem jeito do leitor de saber
+
+563
+00:29:55,040 --> 00:29:58,850
+sem olhar na implementação de set
 
