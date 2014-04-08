@@ -2248,5 +2248,129 @@ não tem jeito do leitor de saber
 
 563
 00:29:55,040 --> 00:29:58,850
-sem olhar na implementação de set
+sem parar e realmente olhar a implementação de set
+
+564
+00:29:58,850 --> 00:30:02,700
+e em qualquer momento que você precise ir até o código para entender um nome
+
+565
+00:30:02,700 --> 00:30:05,050
+esse nome é bem ruim
+
+566
+00:30:06,250 --> 00:30:09,040
+o que a função estava realmente fazendo era os dois
+
+567
+00:30:09,040 --> 00:30:11,850
+definindo o valor e retornando false
+
+568
+00:30:11,850 --> 00:30:14,910
+se o atributo não pudesse ser setado
+
+569
+00:30:14,910 --> 00:30:16,870
+o que eu provavelmente deveria ter feito
+
+570
+00:30:16,870 --> 00:30:18,330
+era algo parecido com isso
+
+571
+00:30:18,330 --> 00:30:21,470
+eu deveria fazer a função set retornar void
+
+572
+00:30:21,470 --> 00:30:24,180
+e disparar uma excessão se falhar
+
+573
+00:30:24,180 --> 00:30:26,760
+e provavelmente eu também deveria ter
+
+574
+00:30:26,760 --> 00:30:29,680
+uma função isSet que retorna o booleano
+
+575
+00:30:29,680 --> 00:30:34,720
+que me informa se o atributo foi realmente definido
+
+576
+00:30:35,750 --> 00:30:39,390
+você lembra da descrição do Grady Booch do que é Clean Code?
+
+577
+00:30:39,390 --> 00:30:44,430
+ele disse que Clean Code sempre lê como prosa bem escrita
+
+578
+00:30:44,430 --> 00:30:48,310
+que tal se a formas de conseguimos que o código seja escrito como prosa bem escrita
+
+579
+00:30:48,310 --> 00:30:51,180
+seja usar as partes apropriadas da gramática
+
+580
+00:30:51,180 --> 00:30:54,380
+para as variáveis, classes e funções
+
+581
+00:30:58,775 --> 00:31:01,100
+A regra do tamanho do escopo
+
+582
+00:31:03,246 --> 00:31:05,246
+o que você acha desses nomes?
+
+583
+00:31:06,780 --> 00:31:08,110
+elemento está bom
+
+584
+00:31:08,110 --> 00:31:10,220
+eu não vejo nenhum problema nisso
+
+585
+00:31:11,700 --> 00:31:15,290
+elementoRaiz, isso parece estar bom
+
+586
+00:31:16,070 --> 00:31:17,430
+IResultadoTeste
+
+587
+00:31:17,430 --> 00:31:18,420
+bem
+
+588
+00:31:18,420 --> 00:31:21,910
+tem esse prefixo I feio na frente dele
+
+589
+00:31:21,910 --> 00:31:24,860
+e m_IssuesDeConfiguracao
+
+590
+00:31:24,860 --> 00:31:28,500
+tem esse m_ na frente dele
+
+591
+00:31:28,500 --> 00:31:29,840
+d
+
+592
+00:31:29,840 --> 00:31:32,710
+d surge do nada. O que diabos é d?
+
+593
+00:31:32,710 --> 00:31:35,410
+e além disso tem tr
+
+594
+00:31:35,410 --> 00:31:37,290
+o que você acha de tr?
 
