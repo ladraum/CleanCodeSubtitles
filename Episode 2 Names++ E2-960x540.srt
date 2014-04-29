@@ -2374,3 +2374,107 @@ e além disso tem tr
 00:31:35,410 --> 00:31:37,290
 o que você acha de tr?
 
+595
+00:31:39,910 --> 00:31:43,360
+tr é uma instância de ITestResult
+
+596
+00:31:43,360 --> 00:31:46,210
+só é conhecida nessas três linhas
+
+597
+00:31:46,210 --> 00:31:48,010
+então o nome deve ser mais longo?
+
+598
+00:31:48,010 --> 00:31:50,690
+deveríamos chamar de testResult?
+
+599
+00:31:50,690 --> 00:31:52,150
+isso seria tolice
+
+600
+00:31:52,150 --> 00:31:54,440
+está perfeitamente claro o que é tr
+
+601
+00:31:54,440 --> 00:31:57,040
+é usado bem perto da sua declaração
+
+602
+00:31:57,040 --> 00:31:59,740
+então utilizar todo o nome da variável
+
+603
+00:31:59,740 --> 00:32:01,640
+seria simplesmente exagero
+
+604
+00:32:01,640 --> 00:32:07,210
+de fato, é mais fácil ler esse código com essa variável pequena
+
+605
+00:32:07,210 --> 00:32:10,630
+porque deixa as linhas melhores e pequenas
+
+606
+00:32:13,180 --> 00:32:17,470
+e isso nos trás uma das regras mais interessantes sobre nomes
+
+607
+00:32:17,470 --> 00:32:19,280
+a relação entre
+
+608
+00:32:19,280 --> 00:32:22,010
+tamanho de escopo e tamanho de nomes
+
+609
+00:32:22,010 --> 00:32:24,410
+veja que para variáveis
+
+610
+00:32:24,410 --> 00:32:26,800
+os tamanhos devem ser proporcionais
+
+611
+00:32:26,800 --> 00:32:31,410
+quanto maior o escopo de uma variável, maior deve ser o nome da variável
+
+612
+00:32:31,410 --> 00:32:36,960
+mas, variáveis em escopos pequenos devem ter nomes bem pequenos
+
+613
+00:32:38,640 --> 00:32:39,780
+Hey Al
+
+614
+00:32:39,780 --> 00:32:43,050
+será que da próxima vez eu posso usar seu pegador de frutas?
+
+615
+00:32:44,100 --> 00:32:46,140
+então
+
+616
+00:32:46,140 --> 00:32:47,700
+olha aqui
+
+617
+00:32:47,700 --> 00:32:51,080
+nós temos essa variável d aqui embaixo
+
+618
+00:32:51,080 --> 00:32:53,550
+o que é isso? O que isso representa?
+
+619
+00:32:53,550 --> 00:32:57,690
+você vai descobrir se subir 20 linhas
+
+620
+00:32:57,690 --> 00:33:01,850
+até a sua declaração: é um documento!
+
